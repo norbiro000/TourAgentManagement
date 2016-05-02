@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E1502191CD666D2005856B3 /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1502181CD666D2005856B3 /* ModalViewController.swift */; };
+		0E1502221CD66AE5005856B3 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1502211CD66AE5005856B3 /* SwiftyJSON.swift */; };
+		0E15022A1CD670AB005856B3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1502291CD670AB005856B3 /* User.swift */; };
 		0E55CB251CD517A400DFFD0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E55CB241CD517A400DFFD0F /* AppDelegate.swift */; };
 		0E55CB271CD517A400DFFD0F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E55CB261CD517A400DFFD0F /* ViewController.swift */; };
 		0E55CB2A1CD517A400DFFD0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E55CB281CD517A400DFFD0F /* Main.storyboard */; };
@@ -15,6 +18,21 @@
 		0E55CB321CD517A400DFFD0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E55CB301CD517A400DFFD0F /* LaunchScreen.storyboard */; };
 		0E55CB3D1CD517A400DFFD0F /* TourAgentManagementTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E55CB3C1CD517A400DFFD0F /* TourAgentManagementTests.swift */; };
 		0E55CB481CD517A400DFFD0F /* TourAgentManagementUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E55CB471CD517A400DFFD0F /* TourAgentManagementUITests.swift */; };
+		0E5A8BBB1CD7439A004E005F /* DZNEmptyDataSet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E5A8BB91CD74393004E005F /* DZNEmptyDataSet.framework */; };
+		0E5A8BBC1CD7439A004E005F /* DZNEmptyDataSet.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0E5A8BB91CD74393004E005F /* DZNEmptyDataSet.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0E5A8BC21CD7467B004E005F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5A8BC11CD7467B004E005F /* MainViewController.swift */; };
+		0E5A8BC71CD74BB9004E005F /* MainBackendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5A8BC61CD74BB9004E005F /* MainBackendViewController.swift */; };
+		0E5A8BCA1CD74F0B004E005F /* MainBackendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5A8BC91CD74F0B004E005F /* MainBackendTableViewCell.swift */; };
+		0E5A8BCC1CD763F4004E005F /* APIFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5A8BCB1CD763F4004E005F /* APIFacade.swift */; };
+		0E5A8BCF1CD76E76004E005F /* MyInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5A8BCE1CD76E76004E005F /* MyInformationViewController.swift */; };
+		0E5A8BD11CD7770A004E005F /* MyInformationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5A8BD01CD7770A004E005F /* MyInformationTableViewCell.swift */; };
+		0E5A8BD31CD7A173004E005F /* SettingMyInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5A8BD21CD7A173004E005F /* SettingMyInformationViewController.swift */; };
+		0E5A8BD51CD7BEB7004E005F /* EditInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5A8BD41CD7BEB7004E005F /* EditInformationViewController.swift */; };
+		0E629AD81CD54C4700370DA3 /* TextFieldEffects.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E629AD71CD54C3800370DA3 /* TextFieldEffects.framework */; };
+		0E629AD91CD54C4700370DA3 /* TextFieldEffects.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0E629AD71CD54C3800370DA3 /* TextFieldEffects.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0E629AE01CD54C9A00370DA3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E629ADF1CD54C9A00370DA3 /* LoginViewController.swift */; };
+		0E629B2C1CD5562900370DA3 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E629B1E1CD5560F00370DA3 /* Alamofire.framework */; };
+		0E629B2D1CD5562900370DA3 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0E629B1E1CD5560F00370DA3 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,9 +50,119 @@
 			remoteGlobalIDString = 0E55CB201CD517A400DFFD0F;
 			remoteInfo = TourAgentManagement;
 		};
+		0E5A8BB81CD74393004E005F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0E5A8BAE1CD74393004E005F /* DZNEmptyDataSet.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 42F9D9861B4D9F6300E307F2;
+			remoteInfo = DZNEmptyDataSet;
+		};
+		0E5A8BBD1CD7439A004E005F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0E5A8BAE1CD74393004E005F /* DZNEmptyDataSet.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 42F9D9851B4D9F6300E307F2;
+			remoteInfo = DZNEmptyDataSet;
+		};
+		0E629AD41CD54C3800370DA3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0E629ACF1CD54C3700370DA3 /* TextFieldEffects.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CBF766D1A71AF7700073B6A;
+			remoteInfo = TextFieldsDemo;
+		};
+		0E629AD61CD54C3800370DA3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0E629ACF1CD54C3700370DA3 /* TextFieldEffects.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CB3B6CE1AA8DEA7000AFA56;
+			remoteInfo = TextFieldEffects;
+		};
+		0E629ADA1CD54C4700370DA3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0E629ACF1CD54C3700370DA3 /* TextFieldEffects.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 4CB3B6CD1AA8DEA7000AFA56;
+			remoteInfo = TextFieldEffects;
+		};
+		0E629B1D1CD5560F00370DA3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0E629B131CD5560F00370DA3 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+		0E629B1F1CD5560F00370DA3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0E629B131CD5560F00370DA3 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS Tests";
+		};
+		0E629B211CD5560F00370DA3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0E629B131CD5560F00370DA3 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4DD67C0B1A5C55C900ED2280;
+			remoteInfo = "Alamofire OSX";
+		};
+		0E629B231CD5560F00370DA3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0E629B131CD5560F00370DA3 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F829C6B21A7A94F100A2CD59;
+			remoteInfo = "Alamofire OSX Tests";
+		};
+		0E629B251CD5560F00370DA3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0E629B131CD5560F00370DA3 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CF626EF1BA7CB3E0011A099;
+			remoteInfo = "Alamofire tvOS";
+		};
+		0E629B271CD5560F00370DA3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0E629B131CD5560F00370DA3 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CF626F81BA7CB3E0011A099;
+			remoteInfo = "Alamofire tvOS Tests";
+		};
+		0E629B291CD5560F00370DA3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0E629B131CD5560F00370DA3 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4202FE01B667AA100C997FB;
+			remoteInfo = "Alamofire watchOS";
+		};
+		0E629B2E1CD5562900370DA3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0E629B131CD5560F00370DA3 /* Alamofire.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		0E629ADC1CD54C4700370DA3 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0E629AD91CD54C4700370DA3 /* TextFieldEffects.framework in Embed Frameworks */,
+				0E629B2D1CD5562900370DA3 /* Alamofire.framework in Embed Frameworks */,
+				0E5A8BBC1CD7439A004E005F /* DZNEmptyDataSet.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		0E1502181CD666D2005856B3 /* ModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
+		0E1502211CD66AE5005856B3 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		0E1502291CD670AB005856B3 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		0E55CB211CD517A400DFFD0F /* TourAgentManagement.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TourAgentManagement.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E55CB241CD517A400DFFD0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E55CB261CD517A400DFFD0F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +177,18 @@
 		0E55CB431CD517A400DFFD0F /* TourAgentManagementUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TourAgentManagementUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E55CB471CD517A400DFFD0F /* TourAgentManagementUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourAgentManagementUITests.swift; sourceTree = "<group>"; };
 		0E55CB491CD517A400DFFD0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E5A8BAE1CD74393004E005F /* DZNEmptyDataSet.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DZNEmptyDataSet.xcodeproj; path = "../../../Downloads/DZNEmptyDataSet-master/Framework/DZNEmptyDataSet.xcodeproj"; sourceTree = "<group>"; };
+		0E5A8BC11CD7467B004E005F /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		0E5A8BC61CD74BB9004E005F /* MainBackendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainBackendViewController.swift; sourceTree = "<group>"; };
+		0E5A8BC91CD74F0B004E005F /* MainBackendTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainBackendTableViewCell.swift; sourceTree = "<group>"; };
+		0E5A8BCB1CD763F4004E005F /* APIFacade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIFacade.swift; sourceTree = "<group>"; };
+		0E5A8BCE1CD76E76004E005F /* MyInformationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyInformationViewController.swift; sourceTree = "<group>"; };
+		0E5A8BD01CD7770A004E005F /* MyInformationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyInformationTableViewCell.swift; sourceTree = "<group>"; };
+		0E5A8BD21CD7A173004E005F /* SettingMyInformationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingMyInformationViewController.swift; sourceTree = "<group>"; };
+		0E5A8BD41CD7BEB7004E005F /* EditInformationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditInformationViewController.swift; sourceTree = "<group>"; };
+		0E629ACF1CD54C3700370DA3 /* TextFieldEffects.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TextFieldEffects.xcodeproj; path = TextFieldEffects/TextFieldEffects.xcodeproj; sourceTree = "<group>"; };
+		0E629ADF1CD54C9A00370DA3 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		0E629B131CD5560F00370DA3 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +196,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E629AD81CD54C4700370DA3 /* TextFieldEffects.framework in Frameworks */,
+				0E629B2C1CD5562900370DA3 /* Alamofire.framework in Frameworks */,
+				0E5A8BBB1CD7439A004E005F /* DZNEmptyDataSet.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +226,9 @@
 				0E55CB3B1CD517A400DFFD0F /* TourAgentManagementTests */,
 				0E55CB461CD517A400DFFD0F /* TourAgentManagementUITests */,
 				0E55CB221CD517A400DFFD0F /* Products */,
+				0E5A8BAE1CD74393004E005F /* DZNEmptyDataSet.xcodeproj */,
+				0E629B131CD5560F00370DA3 /* Alamofire.xcodeproj */,
+				0E629ACF1CD54C3700370DA3 /* TextFieldEffects.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,11 +245,13 @@
 		0E55CB231CD517A400DFFD0F /* TourAgentManagement */ = {
 			isa = PBXGroup;
 			children = (
+				0E5A8BC51CD74ACD004E005F /* Model */,
+				0E5A8BC41CD74AB9004E005F /* Lib */,
+				0E5A8BC31CD74AAA004E005F /* View */,
+				0E629ADD1CD54C7100370DA3 /* Controller */,
 				0E55CB241CD517A400DFFD0F /* AppDelegate.swift */,
 				0E55CB261CD517A400DFFD0F /* ViewController.swift */,
-				0E55CB281CD517A400DFFD0F /* Main.storyboard */,
 				0E55CB2E1CD517A400DFFD0F /* Assets.xcassets */,
-				0E55CB301CD517A400DFFD0F /* LaunchScreen.storyboard */,
 				0E55CB331CD517A400DFFD0F /* Info.plist */,
 				0E55CB2B1CD517A400DFFD0F /* TourAgentManagement.xcdatamodeld */,
 			);
@@ -128,6 +276,119 @@
 			path = TourAgentManagementUITests;
 			sourceTree = "<group>";
 		};
+		0E5A8BAF1CD74393004E005F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0E5A8BB91CD74393004E005F /* DZNEmptyDataSet.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0E5A8BBF1CD743B0004E005F /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				0E5A8BC11CD7467B004E005F /* MainViewController.swift */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		0E5A8BC01CD743D7004E005F /* Backend */ = {
+			isa = PBXGroup;
+			children = (
+				0E5A8BCD1CD76E51004E005F /* My Information */,
+				0E5A8BC81CD74EEF004E005F /* Main */,
+			);
+			name = Backend;
+			sourceTree = "<group>";
+		};
+		0E5A8BC31CD74AAA004E005F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0E55CB281CD517A400DFFD0F /* Main.storyboard */,
+				0E55CB301CD517A400DFFD0F /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		0E5A8BC41CD74AB9004E005F /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				0E1502211CD66AE5005856B3 /* SwiftyJSON.swift */,
+				0E5A8BCB1CD763F4004E005F /* APIFacade.swift */,
+			);
+			name = Lib;
+			sourceTree = "<group>";
+		};
+		0E5A8BC51CD74ACD004E005F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0E1502291CD670AB005856B3 /* User.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		0E5A8BC81CD74EEF004E005F /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				0E5A8BC61CD74BB9004E005F /* MainBackendViewController.swift */,
+				0E5A8BC91CD74F0B004E005F /* MainBackendTableViewCell.swift */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		0E5A8BCD1CD76E51004E005F /* My Information */ = {
+			isa = PBXGroup;
+			children = (
+				0E5A8BCE1CD76E76004E005F /* MyInformationViewController.swift */,
+				0E5A8BD01CD7770A004E005F /* MyInformationTableViewCell.swift */,
+				0E5A8BD21CD7A173004E005F /* SettingMyInformationViewController.swift */,
+				0E5A8BD41CD7BEB7004E005F /* EditInformationViewController.swift */,
+			);
+			name = "My Information";
+			sourceTree = "<group>";
+		};
+		0E629AD01CD54C3700370DA3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0E629AD51CD54C3800370DA3 /* TextFieldsDemo.app */,
+				0E629AD71CD54C3800370DA3 /* TextFieldEffects.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0E629ADD1CD54C7100370DA3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0E5A8BC01CD743D7004E005F /* Backend */,
+				0E5A8BBF1CD743B0004E005F /* Main */,
+				0E629ADE1CD54C8000370DA3 /* Login */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		0E629ADE1CD54C8000370DA3 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				0E629ADF1CD54C9A00370DA3 /* LoginViewController.swift */,
+				0E1502181CD666D2005856B3 /* ModalViewController.swift */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		0E629B141CD5560F00370DA3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0E629B1E1CD5560F00370DA3 /* Alamofire.framework */,
+				0E629B201CD5560F00370DA3 /* Alamofire iOS Tests.xctest */,
+				0E629B221CD5560F00370DA3 /* Alamofire.framework */,
+				0E629B241CD5560F00370DA3 /* Alamofire OSX Tests.xctest */,
+				0E629B261CD5560F00370DA3 /* Alamofire.framework */,
+				0E629B281CD5560F00370DA3 /* Alamofire tvOS Tests.xctest */,
+				0E629B2A1CD5560F00370DA3 /* Alamofire.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,10 +399,14 @@
 				0E55CB1D1CD517A400DFFD0F /* Sources */,
 				0E55CB1E1CD517A400DFFD0F /* Frameworks */,
 				0E55CB1F1CD517A400DFFD0F /* Resources */,
+				0E629ADC1CD54C4700370DA3 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				0E629ADB1CD54C4700370DA3 /* PBXTargetDependency */,
+				0E629B2F1CD5562900370DA3 /* PBXTargetDependency */,
+				0E5A8BBE1CD7439A004E005F /* PBXTargetDependency */,
 			);
 			name = TourAgentManagement;
 			productName = TourAgentManagement;
@@ -221,6 +486,20 @@
 			mainGroup = 0E55CB181CD517A400DFFD0F;
 			productRefGroup = 0E55CB221CD517A400DFFD0F /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 0E629B141CD5560F00370DA3 /* Products */;
+					ProjectRef = 0E629B131CD5560F00370DA3 /* Alamofire.xcodeproj */;
+				},
+				{
+					ProductGroup = 0E5A8BAF1CD74393004E005F /* Products */;
+					ProjectRef = 0E5A8BAE1CD74393004E005F /* DZNEmptyDataSet.xcodeproj */;
+				},
+				{
+					ProductGroup = 0E629AD01CD54C3700370DA3 /* Products */;
+					ProjectRef = 0E629ACF1CD54C3700370DA3 /* TextFieldEffects.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				0E55CB201CD517A400DFFD0F /* TourAgentManagement */,
@@ -229,6 +508,79 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		0E5A8BB91CD74393004E005F /* DZNEmptyDataSet.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = DZNEmptyDataSet.framework;
+			remoteRef = 0E5A8BB81CD74393004E005F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0E629AD51CD54C3800370DA3 /* TextFieldsDemo.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = TextFieldsDemo.app;
+			remoteRef = 0E629AD41CD54C3800370DA3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0E629AD71CD54C3800370DA3 /* TextFieldEffects.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = TextFieldEffects.framework;
+			remoteRef = 0E629AD61CD54C3800370DA3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0E629B1E1CD5560F00370DA3 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 0E629B1D1CD5560F00370DA3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0E629B201CD5560F00370DA3 /* Alamofire iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire iOS Tests.xctest";
+			remoteRef = 0E629B1F1CD5560F00370DA3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0E629B221CD5560F00370DA3 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 0E629B211CD5560F00370DA3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0E629B241CD5560F00370DA3 /* Alamofire OSX Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire OSX Tests.xctest";
+			remoteRef = 0E629B231CD5560F00370DA3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0E629B261CD5560F00370DA3 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 0E629B251CD5560F00370DA3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0E629B281CD5560F00370DA3 /* Alamofire tvOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire tvOS Tests.xctest";
+			remoteRef = 0E629B271CD5560F00370DA3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0E629B2A1CD5560F00370DA3 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 0E629B291CD5560F00370DA3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		0E55CB1F1CD517A400DFFD0F /* Resources */ = {
@@ -262,9 +614,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E5A8BD11CD7770A004E005F /* MyInformationTableViewCell.swift in Sources */,
+				0E5A8BD51CD7BEB7004E005F /* EditInformationViewController.swift in Sources */,
+				0E629AE01CD54C9A00370DA3 /* LoginViewController.swift in Sources */,
+				0E5A8BD31CD7A173004E005F /* SettingMyInformationViewController.swift in Sources */,
+				0E1502191CD666D2005856B3 /* ModalViewController.swift in Sources */,
+				0E5A8BC71CD74BB9004E005F /* MainBackendViewController.swift in Sources */,
 				0E55CB2D1CD517A400DFFD0F /* TourAgentManagement.xcdatamodeld in Sources */,
+				0E1502221CD66AE5005856B3 /* SwiftyJSON.swift in Sources */,
+				0E5A8BCF1CD76E76004E005F /* MyInformationViewController.swift in Sources */,
 				0E55CB271CD517A400DFFD0F /* ViewController.swift in Sources */,
 				0E55CB251CD517A400DFFD0F /* AppDelegate.swift in Sources */,
+				0E5A8BCC1CD763F4004E005F /* APIFacade.swift in Sources */,
+				0E15022A1CD670AB005856B3 /* User.swift in Sources */,
+				0E5A8BC21CD7467B004E005F /* MainViewController.swift in Sources */,
+				0E5A8BCA1CD74F0B004E005F /* MainBackendTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,6 +660,21 @@
 			isa = PBXTargetDependency;
 			target = 0E55CB201CD517A400DFFD0F /* TourAgentManagement */;
 			targetProxy = 0E55CB441CD517A400DFFD0F /* PBXContainerItemProxy */;
+		};
+		0E5A8BBE1CD7439A004E005F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DZNEmptyDataSet;
+			targetProxy = 0E5A8BBD1CD7439A004E005F /* PBXContainerItemProxy */;
+		};
+		0E629ADB1CD54C4700370DA3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TextFieldEffects;
+			targetProxy = 0E629ADA1CD54C4700370DA3 /* PBXContainerItemProxy */;
+		};
+		0E629B2F1CD5562900370DA3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Alamofire iOS";
+			targetProxy = 0E629B2E1CD5562900370DA3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -408,6 +787,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = TourAgentManagement/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Stordong.TourAgentManagement;
@@ -419,6 +799,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = TourAgentManagement/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Stordong.TourAgentManagement;
@@ -491,6 +872,7 @@
 				0E55CB4E1CD517A400DFFD0F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0E55CB4F1CD517A400DFFD0F /* Build configuration list for PBXNativeTarget "TourAgentManagementTests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +881,7 @@
 				0E55CB511CD517A400DFFD0F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0E55CB521CD517A400DFFD0F /* Build configuration list for PBXNativeTarget "TourAgentManagementUITests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +890,7 @@
 				0E55CB541CD517A400DFFD0F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
