@@ -9,7 +9,8 @@
 import UIKit
 import DZNEmptyDataSet
 
-class MyInformationViewController: UIViewController , UITableViewDelegate, UITableViewDataSource, DZNEmptyDataSetSource, DZNEmptyDataSetDelegate{
+class MyInformationViewController: UIViewController , UITableViewDelegate, UITableViewDataSource, DZNEmptyDataSetSource, DZNEmptyDataSetDelegate, EditMyInformationDelegate{
+    
     
     
     @IBOutlet weak var titleLabel: UILabel!
@@ -18,8 +19,6 @@ class MyInformationViewController: UIViewController , UITableViewDelegate, UITab
     
     var imageUrl = "ic_phone"
     var dataSource = JSON?()
-    
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,15 +36,10 @@ class MyInformationViewController: UIViewController , UITableViewDelegate, UITab
         tableView.delegate = self
         tableView.emptyDataSetSource = self
         tableView.emptyDataSetDelegate = self
+    
         
         self.tableView.tableFooterView = UIView()
-        
-        let json = Service.shareService.getMyInformation { (JSON) in
-//            print(JSON["local"])
-            self.dataSource = JSON
-            self.tableView.reloadData()
-            print(JSON)
-        }
+        loadData()
     }
 
     override func didReceiveMemoryWarning() {
@@ -113,7 +107,6 @@ class MyInformationViewController: UIViewController , UITableViewDelegate, UITab
      func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if editingStyle == .Delete {
             // Delete the row from the data source
-//            meals.removeAtIndex(indexPath.row)
             tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
 
         } else if editingStyle == .Insert {
@@ -125,7 +118,6 @@ class MyInformationViewController: UIViewController , UITableViewDelegate, UITab
     func tableView(tableView: UITableView, editActionsForRowAtIndexPath indexPath: NSIndexPath) -> [UITableViewRowAction]?
     {
         let edit = UITableViewRowAction(style: UITableViewRowActionStyle.Normal, title: "EDIT"){(UITableViewRowAction,NSIndexPath) -> Void in
-            
             self.performSegueWithIdentifier("editInformation", sender: indexPath)
         }
         
@@ -140,12 +132,53 @@ class MyInformationViewController: UIViewController , UITableViewDelegate, UITab
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        if segue.identifier == "editInformation"{
+            let indexPath = sender as! NSIndexPath
+            let destination:EditInformationViewController = segue.destinationViewController as! EditInformationViewController
+            print(indexPath.row)
+            
+            //Set delegate to subview
+            destination.delegate = self
+            
+            switch(indexPath.row){
+            case 0:
+                destination.placehoderTitle = "Telephone Number"
+                destination.oldValue = self.dataSource!["telephone"].stringValue
+                destination.jsonKey = "telephone"
+                
+            case 1:
+                destination.placehoderTitle = "Fax"
+                destination.oldValue = self.dataSource!["fax"].stringValue
+                destination.jsonKey = "fax"
+            case 2:
+                destination.placehoderTitle = "Email"
+                destination.oldValue = self.dataSource!["email"].stringValue
+                destination.jsonKey = "email"
+            case 3:
+                destination.placehoderTitle = "Province"
+                destination.oldValue = self.dataSource!["province"].stringValue
+                destination.jsonKey = "province"
+            case 4:
+                destination.placehoderTitle = "Address"
+                destination.oldValue = self.dataSource!["address"].stringValue
+                destination.jsonKey = "address"
+            default:break
+            }
+    }
         
-        let indexPath = sender as! NSIndexPath
-        print("AJDLKAJSDLKAJD")
-        print(indexPath.row)
         
-        
+    }
+    
+    func success() {
+        loadData()
+        tableView.reloadData()
+    }
+    
+    func loadData() {
+        let json = Service.shareService.getMyInformation(self) { (JSON) in
+            self.dataSource = JSON
+            self.tableView.reloadData()
+        }
     }
     
 

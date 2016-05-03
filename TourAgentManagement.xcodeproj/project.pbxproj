@@ -7,9 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E025E851CD8F94000AE8077 /* DetailOperatorListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E025E841CD8F94000AE8077 /* DetailOperatorListTableViewCell.swift */; };
+		0E025E871CD8FACB00AE8077 /* DetailOperatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E025E861CD8FACB00AE8077 /* DetailOperatorViewController.swift */; };
 		0E1502191CD666D2005856B3 /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1502181CD666D2005856B3 /* ModalViewController.swift */; };
 		0E1502221CD66AE5005856B3 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1502211CD66AE5005856B3 /* SwiftyJSON.swift */; };
 		0E15022A1CD670AB005856B3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1502291CD670AB005856B3 /* User.swift */; };
+		0E187A771CD9357700D8B3A9 /* InternetCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E187A761CD9357700D8B3A9 /* InternetCheck.swift */; };
+		0E2EFCDA1CD854B10081ECCD /* MyColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2EFCD91CD854B10081ECCD /* MyColor.swift */; };
+		0E2EFCE41CD8636E0081ECCD /* OperatorListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2EFCE31CD8636E0081ECCD /* OperatorListViewController.swift */; };
 		0E55CB251CD517A400DFFD0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E55CB241CD517A400DFFD0F /* AppDelegate.swift */; };
 		0E55CB271CD517A400DFFD0F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E55CB261CD517A400DFFD0F /* ViewController.swift */; };
 		0E55CB2A1CD517A400DFFD0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E55CB281CD517A400DFFD0F /* Main.storyboard */; };
@@ -33,6 +38,9 @@
 		0E629AE01CD54C9A00370DA3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E629ADF1CD54C9A00370DA3 /* LoginViewController.swift */; };
 		0E629B2C1CD5562900370DA3 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E629B1E1CD5560F00370DA3 /* Alamofire.framework */; };
 		0E629B2D1CD5562900370DA3 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0E629B1E1CD5560F00370DA3 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0EC77BCB1CD8965400DA9979 /* OperatorListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC77BCA1CD8965400DA9979 /* OperatorListTableViewCell.swift */; };
+		0EC77BD61CD89C5900DA9979 /* MyOperatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC77BD51CD89C5900DA9979 /* MyOperatorViewController.swift */; };
+		0EC77BD81CD89C7200DA9979 /* MyOperatorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC77BD71CD89C7200DA9979 /* MyOperatorTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -160,9 +168,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0E025E841CD8F94000AE8077 /* DetailOperatorListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailOperatorListTableViewCell.swift; sourceTree = "<group>"; };
+		0E025E861CD8FACB00AE8077 /* DetailOperatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailOperatorViewController.swift; sourceTree = "<group>"; };
 		0E1502181CD666D2005856B3 /* ModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
 		0E1502211CD66AE5005856B3 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		0E1502291CD670AB005856B3 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		0E187A761CD9357700D8B3A9 /* InternetCheck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InternetCheck.swift; sourceTree = "<group>"; };
+		0E2EFCD91CD854B10081ECCD /* MyColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyColor.swift; sourceTree = "<group>"; };
+		0E2EFCE31CD8636E0081ECCD /* OperatorListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperatorListViewController.swift; sourceTree = "<group>"; };
 		0E55CB211CD517A400DFFD0F /* TourAgentManagement.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TourAgentManagement.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E55CB241CD517A400DFFD0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E55CB261CD517A400DFFD0F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -189,6 +202,9 @@
 		0E629ACF1CD54C3700370DA3 /* TextFieldEffects.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TextFieldEffects.xcodeproj; path = TextFieldEffects/TextFieldEffects.xcodeproj; sourceTree = "<group>"; };
 		0E629ADF1CD54C9A00370DA3 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		0E629B131CD5560F00370DA3 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
+		0EC77BCA1CD8965400DA9979 /* OperatorListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperatorListTableViewCell.swift; sourceTree = "<group>"; };
+		0EC77BD51CD89C5900DA9979 /* MyOperatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyOperatorViewController.swift; sourceTree = "<group>"; };
+		0EC77BD71CD89C7200DA9979 /* MyOperatorTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyOperatorTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,6 +235,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E025E7C1CD8F92700AE8077 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				0E025E841CD8F94000AE8077 /* DetailOperatorListTableViewCell.swift */,
+				0E025E861CD8FACB00AE8077 /* DetailOperatorViewController.swift */,
+			);
+			name = Detail;
+			sourceTree = "<group>";
+		};
+		0E2EFCE21CD85C110081ECCD /* Operator */ = {
+			isa = PBXGroup;
+			children = (
+				0EC77BD41CD8993200DA9979 /* My Operator */,
+				0EC77BD31CD8992800DA9979 /* OperatorList */,
+			);
+			name = Operator;
+			sourceTree = "<group>";
+		};
 		0E55CB181CD517A400DFFD0F = {
 			isa = PBXGroup;
 			children = (
@@ -295,6 +329,7 @@
 		0E5A8BC01CD743D7004E005F /* Backend */ = {
 			isa = PBXGroup;
 			children = (
+				0E2EFCE21CD85C110081ECCD /* Operator */,
 				0E5A8BCD1CD76E51004E005F /* My Information */,
 				0E5A8BC81CD74EEF004E005F /* Main */,
 			);
@@ -315,6 +350,8 @@
 			children = (
 				0E1502211CD66AE5005856B3 /* SwiftyJSON.swift */,
 				0E5A8BCB1CD763F4004E005F /* APIFacade.swift */,
+				0E2EFCD91CD854B10081ECCD /* MyColor.swift */,
+				0E187A761CD9357700D8B3A9 /* InternetCheck.swift */,
 			);
 			name = Lib;
 			sourceTree = "<group>";
@@ -387,6 +424,25 @@
 				0E629B2A1CD5560F00370DA3 /* Alamofire.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		0EC77BD31CD8992800DA9979 /* OperatorList */ = {
+			isa = PBXGroup;
+			children = (
+				0E025E7C1CD8F92700AE8077 /* Detail */,
+				0E2EFCE31CD8636E0081ECCD /* OperatorListViewController.swift */,
+				0EC77BCA1CD8965400DA9979 /* OperatorListTableViewCell.swift */,
+			);
+			name = OperatorList;
+			sourceTree = "<group>";
+		};
+		0EC77BD41CD8993200DA9979 /* My Operator */ = {
+			isa = PBXGroup;
+			children = (
+				0EC77BD51CD89C5900DA9979 /* MyOperatorViewController.swift */,
+				0EC77BD71CD89C7200DA9979 /* MyOperatorTableViewCell.swift */,
+			);
+			name = "My Operator";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -619,16 +675,24 @@
 				0E629AE01CD54C9A00370DA3 /* LoginViewController.swift in Sources */,
 				0E5A8BD31CD7A173004E005F /* SettingMyInformationViewController.swift in Sources */,
 				0E1502191CD666D2005856B3 /* ModalViewController.swift in Sources */,
+				0EC77BD81CD89C7200DA9979 /* MyOperatorTableViewCell.swift in Sources */,
 				0E5A8BC71CD74BB9004E005F /* MainBackendViewController.swift in Sources */,
 				0E55CB2D1CD517A400DFFD0F /* TourAgentManagement.xcdatamodeld in Sources */,
 				0E1502221CD66AE5005856B3 /* SwiftyJSON.swift in Sources */,
 				0E5A8BCF1CD76E76004E005F /* MyInformationViewController.swift in Sources */,
 				0E55CB271CD517A400DFFD0F /* ViewController.swift in Sources */,
 				0E55CB251CD517A400DFFD0F /* AppDelegate.swift in Sources */,
+				0E025E851CD8F94000AE8077 /* DetailOperatorListTableViewCell.swift in Sources */,
+				0EC77BD61CD89C5900DA9979 /* MyOperatorViewController.swift in Sources */,
 				0E5A8BCC1CD763F4004E005F /* APIFacade.swift in Sources */,
 				0E15022A1CD670AB005856B3 /* User.swift in Sources */,
+				0E187A771CD9357700D8B3A9 /* InternetCheck.swift in Sources */,
+				0E2EFCDA1CD854B10081ECCD /* MyColor.swift in Sources */,
 				0E5A8BC21CD7467B004E005F /* MainViewController.swift in Sources */,
+				0E2EFCE41CD8636E0081ECCD /* OperatorListViewController.swift in Sources */,
+				0E025E871CD8FACB00AE8077 /* DetailOperatorViewController.swift in Sources */,
 				0E5A8BCA1CD74F0B004E005F /* MainBackendTableViewCell.swift in Sources */,
+				0EC77BCB1CD8965400DA9979 /* OperatorListTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

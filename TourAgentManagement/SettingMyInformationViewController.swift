@@ -45,9 +45,9 @@ class SettingMyInformationViewController: UIViewController {
             "fax":tf_fax.text!,
             "province":tf_province.text!,
             "address":tf_address.text!,
-            
-            
         ]
-        Service.shareService.saveMyInformation(parameter)
+        Service.shareService.saveMyInformation(parameter){
+            
+        }
     }
 }

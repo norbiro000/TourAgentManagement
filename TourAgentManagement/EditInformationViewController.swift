@@ -9,9 +9,19 @@
 import UIKit
 import TextFieldEffects
 
-class EditInformationViewController: UIViewController {
+protocol EditMyInformationDelegate {
+    func success()
+}
+
+class EditInformationViewController: UIViewController{
     
     var placehoderTitle:String  = ""
+    var oldValue:String = ""
+    var jsonKey:String = ""
+    
+    var delegate:EditMyInformationDelegate?
+    
+    
     @IBOutlet weak var tf_value: JiroTextField!
     
     
@@ -20,8 +30,7 @@ class EditInformationViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         tf_value.placeholder = placehoderTitle
-        
-        
+        tf_value.text = oldValue
     }
 
     override func didReceiveMemoryWarning() {
@@ -40,6 +49,19 @@ class EditInformationViewController: UIViewController {
     }
     */
 
+    @IBAction func onSave(sender: AnyObject) {
+        let params = [
+            jsonKey: tf_value.text!
+        ]
+        
+        Service.shareService.saveMyInformation(params){
+            self.dismissViewControllerAnimated(true) {
+                self.delegate?.success()
+            }
+        }
+    }
+    
+    
     @IBAction func onClose(sender: AnyObject) {
         self.dismissViewControllerAnimated(true) { 
             

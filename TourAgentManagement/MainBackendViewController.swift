@@ -39,7 +39,8 @@ class MainBackendViewController: UIViewController ,UITableViewDataSource, UITabl
         // 2
         nav?.barStyle = UIBarStyle.Black
         nav?.tintColor = UIColor.whiteColor()
-        nav?.barTintColor = UIColor(red: 40/255, green: 176/255, blue: 139/255, alpha: 1)
+        MyColor.darkGreenColor()
+        nav?.barTintColor = MyColor.darkGreenColor()
     }
     
     override func didReceiveMemoryWarning() {
@@ -83,16 +84,25 @@ class MainBackendViewController: UIViewController ,UITableViewDataSource, UITabl
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        if indexPath.section == 0{
+        
+        switch(indexPath.section){
+        case 0:
             if indexPath.row == 0{
                 //Go to My Information
                 performSegueWithIdentifier("myInformationSegue", sender: nil)
             }
+        case 1:
+            if indexPath.row == 0{
+                //Go to My Information
+                performSegueWithIdentifier("operatorListSegue", sender: nil)
+            }
+            if indexPath.row == 1{
+                performSegueWithIdentifier("myOperatorSegue", sender: nil)
+            }
+        default:break
         }
+        
     }
-    
-   
-
 }
 
 extension MainBackendViewController{

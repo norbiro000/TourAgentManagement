@@ -8,6 +8,7 @@
 
 import Foundation
 import Alamofire
+import UIKit
 
 
 class Service {
@@ -16,22 +17,57 @@ class Service {
     
     static let shareService = Service()
     
-    func getMyInformation(completion: (JSON)->() ){
-        Alamofire.request(.GET, host+"/api/myInformation/"+User.shareInstance.token)
-            .response { request, response, data, error in
-                let json = JSON(data : data!)
-                completion(json)
+    func getMyInformation(context: UIViewController ,completion: (JSON)->() ){
+//        if Reachability.isConnectedToNetwork(context){
+            Alamofire.request(.GET, host+"/api/myInformation/"+User.shareInstance.token)
+                .response { request, response, data, error in
+                    if let data = data{
+                        let json = JSON(data : data)
+                        completion(json)
+                    }
+            }
+//        }
+        
+    }
+    
+    func saveMyInformation(params : [String:String], completion: ()->()) {
+        Alamofire.request(.POST, host+"/api/saveInformation/"+User.shareInstance.token, parameters: params)
+            .response { request, response, data, err in
+                completion()
         }
         
     }
     
+    func getOperatorList(completion: (JSON)->()){
+        Alamofire.request(.GET, host+"/api/getOperator/"+User.shareInstance.token)
+            .response { request, response, data, err in
+                if let data = data{
+                    let json = JSON(data: data)
+                    completion(json)
+                }
+        }
+    }
     
+    func getMyOperatorList(completion: (JSON)->()){
+        Alamofire.request(.GET, host+"/api/getMyOperator/"+User.shareInstance.token)
+            .response { request, response, data, err in
+                if let data = data{
+                    let json = JSON(data: data)
+                    completion(json)
+                }
+        }
+    }
     
-    func saveMyInformation(params : [String:String]) {
-        Alamofire.request(.POST,host+"/api/saveInformation/"+User.shareInstance.token, parameters: params)
+    func sendRequestAddPartner(params:[String:String]){
+        Alamofire.request(.POST, host+"/api/addPartner/"+User.shareInstance.token, parameters: params)
             .response { request, response, data, err in
                 
+                print("send")
+//                if let data = data{
+//                    let json = JSON(data: data)
+                    
+//                }
         }
-        
     }
+    
 }
