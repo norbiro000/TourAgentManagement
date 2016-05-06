@@ -15,6 +15,14 @@
 		0E187A771CD9357700D8B3A9 /* InternetCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E187A761CD9357700D8B3A9 /* InternetCheck.swift */; };
 		0E2EFCDA1CD854B10081ECCD /* MyColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2EFCD91CD854B10081ECCD /* MyColor.swift */; };
 		0E2EFCE41CD8636E0081ECCD /* OperatorListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2EFCE31CD8636E0081ECCD /* OperatorListViewController.swift */; };
+		0E47ED801CDC92F200AF56BB /* BookingFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E47ED7F1CDC92F200AF56BB /* BookingFactory.swift */; };
+		0E47ED891CDC978B00AF56BB /* Cart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E47ED881CDC978B00AF56BB /* Cart.swift */; };
+		0E47ED8C1CDC994400AF56BB /* BookingMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E47ED8B1CDC994400AF56BB /* BookingMainViewController.swift */; };
+		0E47ED8E1CDC9BFC00AF56BB /* Voucher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E47ED8D1CDC9BFC00AF56BB /* Voucher.swift */; };
+		0E47ED901CDCFCA900AF56BB /* BookingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E47ED8F1CDCFCA900AF56BB /* BookingTableViewCell.swift */; };
+		0E47ED921CDD0A6F00AF56BB /* DetailPresentationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E47ED911CDD0A6F00AF56BB /* DetailPresentationViewController.swift */; };
+		0E47ED951CDD185500AF56BB /* SetPriceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E47ED941CDD185500AF56BB /* SetPriceTableViewController.swift */; };
+		0E47ED971CDD18BB00AF56BB /* SetPriceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E47ED961CDD18BB00AF56BB /* SetPriceTableViewCell.swift */; };
 		0E55CB251CD517A400DFFD0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E55CB241CD517A400DFFD0F /* AppDelegate.swift */; };
 		0E55CB271CD517A400DFFD0F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E55CB261CD517A400DFFD0F /* ViewController.swift */; };
 		0E55CB2A1CD517A400DFFD0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E55CB281CD517A400DFFD0F /* Main.storyboard */; };
@@ -38,6 +46,9 @@
 		0E629AE01CD54C9A00370DA3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E629ADF1CD54C9A00370DA3 /* LoginViewController.swift */; };
 		0E629B2C1CD5562900370DA3 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E629B1E1CD5560F00370DA3 /* Alamofire.framework */; };
 		0E629B2D1CD5562900370DA3 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0E629B1E1CD5560F00370DA3 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0E79408B1CDB945200882E20 /* PresentationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E79408A1CDB945200882E20 /* PresentationViewController.swift */; };
+		0E79408E1CDB94D400882E20 /* PresentaionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E79408D1CDB94D400882E20 /* PresentaionTableViewCell.swift */; };
+		0E7940901CDB9CE600882E20 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E79408F1CDB9CE600882E20 /* GradientView.swift */; };
 		0EC77BCB1CD8965400DA9979 /* OperatorListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC77BCA1CD8965400DA9979 /* OperatorListTableViewCell.swift */; };
 		0EC77BD61CD89C5900DA9979 /* MyOperatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC77BD51CD89C5900DA9979 /* MyOperatorViewController.swift */; };
 		0EC77BD81CD89C7200DA9979 /* MyOperatorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC77BD71CD89C7200DA9979 /* MyOperatorTableViewCell.swift */; };
@@ -176,6 +187,14 @@
 		0E187A761CD9357700D8B3A9 /* InternetCheck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InternetCheck.swift; sourceTree = "<group>"; };
 		0E2EFCD91CD854B10081ECCD /* MyColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyColor.swift; sourceTree = "<group>"; };
 		0E2EFCE31CD8636E0081ECCD /* OperatorListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperatorListViewController.swift; sourceTree = "<group>"; };
+		0E47ED7F1CDC92F200AF56BB /* BookingFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookingFactory.swift; sourceTree = "<group>"; };
+		0E47ED881CDC978B00AF56BB /* Cart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cart.swift; sourceTree = "<group>"; };
+		0E47ED8B1CDC994400AF56BB /* BookingMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookingMainViewController.swift; sourceTree = "<group>"; };
+		0E47ED8D1CDC9BFC00AF56BB /* Voucher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Voucher.swift; sourceTree = "<group>"; };
+		0E47ED8F1CDCFCA900AF56BB /* BookingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookingTableViewCell.swift; sourceTree = "<group>"; };
+		0E47ED911CDD0A6F00AF56BB /* DetailPresentationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailPresentationViewController.swift; sourceTree = "<group>"; };
+		0E47ED941CDD185500AF56BB /* SetPriceTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetPriceTableViewController.swift; sourceTree = "<group>"; };
+		0E47ED961CDD18BB00AF56BB /* SetPriceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetPriceTableViewCell.swift; sourceTree = "<group>"; };
 		0E55CB211CD517A400DFFD0F /* TourAgentManagement.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TourAgentManagement.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E55CB241CD517A400DFFD0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E55CB261CD517A400DFFD0F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -202,6 +221,13 @@
 		0E629ACF1CD54C3700370DA3 /* TextFieldEffects.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TextFieldEffects.xcodeproj; path = TextFieldEffects/TextFieldEffects.xcodeproj; sourceTree = "<group>"; };
 		0E629ADF1CD54C9A00370DA3 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		0E629B131CD5560F00370DA3 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
+		0E79408A1CDB945200882E20 /* PresentationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentationViewController.swift; sourceTree = "<group>"; };
+		0E79408D1CDB94D400882E20 /* PresentaionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentaionTableViewCell.swift; sourceTree = "<group>"; };
+		0E79408F1CDB9CE600882E20 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		0EA2CBF51CDBC5B500BBDF1E /* System San Francisco Display Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "System San Francisco Display Bold.ttf"; sourceTree = "<group>"; };
+		0EA2CBF61CDBC5B500BBDF1E /* System San Francisco Display Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "System San Francisco Display Regular.ttf"; sourceTree = "<group>"; };
+		0EA2CBF71CDBC5B500BBDF1E /* System San Francisco Display Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "System San Francisco Display Thin.ttf"; sourceTree = "<group>"; };
+		0EA2CBF81CDBC5B500BBDF1E /* SystemSanFranciscoDisplayUltralight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SystemSanFranciscoDisplayUltralight.ttf; sourceTree = "<group>"; };
 		0EC77BCA1CD8965400DA9979 /* OperatorListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperatorListTableViewCell.swift; sourceTree = "<group>"; };
 		0EC77BD51CD89C5900DA9979 /* MyOperatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyOperatorViewController.swift; sourceTree = "<group>"; };
 		0EC77BD71CD89C7200DA9979 /* MyOperatorTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyOperatorTableViewCell.swift; sourceTree = "<group>"; };
@@ -247,10 +273,30 @@
 		0E2EFCE21CD85C110081ECCD /* Operator */ = {
 			isa = PBXGroup;
 			children = (
+				0E025E7C1CD8F92700AE8077 /* Detail */,
 				0EC77BD41CD8993200DA9979 /* My Operator */,
 				0EC77BD31CD8992800DA9979 /* OperatorList */,
 			);
 			name = Operator;
+			sourceTree = "<group>";
+		};
+		0E47ED8A1CDC990300AF56BB /* Booking */ = {
+			isa = PBXGroup;
+			children = (
+				0E47ED931CDD17E200AF56BB /* SetPrice */,
+				0E47ED8B1CDC994400AF56BB /* BookingMainViewController.swift */,
+				0E47ED8F1CDCFCA900AF56BB /* BookingTableViewCell.swift */,
+			);
+			name = Booking;
+			sourceTree = "<group>";
+		};
+		0E47ED931CDD17E200AF56BB /* SetPrice */ = {
+			isa = PBXGroup;
+			children = (
+				0E47ED941CDD185500AF56BB /* SetPriceTableViewController.swift */,
+				0E47ED961CDD18BB00AF56BB /* SetPriceTableViewCell.swift */,
+			);
+			name = SetPrice;
 			sourceTree = "<group>";
 		};
 		0E55CB181CD517A400DFFD0F = {
@@ -279,6 +325,7 @@
 		0E55CB231CD517A400DFFD0F /* TourAgentManagement */ = {
 			isa = PBXGroup;
 			children = (
+				0EA2CBF91CDBC69700BBDF1E /* Resource */,
 				0E5A8BC51CD74ACD004E005F /* Model */,
 				0E5A8BC41CD74AB9004E005F /* Lib */,
 				0E5A8BC31CD74AAA004E005F /* View */,
@@ -329,6 +376,7 @@
 		0E5A8BC01CD743D7004E005F /* Backend */ = {
 			isa = PBXGroup;
 			children = (
+				0EA2CBFA1CDBD82700BBDF1E /* Booking */,
 				0E2EFCE21CD85C110081ECCD /* Operator */,
 				0E5A8BCD1CD76E51004E005F /* My Information */,
 				0E5A8BC81CD74EEF004E005F /* Main */,
@@ -352,6 +400,8 @@
 				0E5A8BCB1CD763F4004E005F /* APIFacade.swift */,
 				0E2EFCD91CD854B10081ECCD /* MyColor.swift */,
 				0E187A761CD9357700D8B3A9 /* InternetCheck.swift */,
+				0E79408F1CDB9CE600882E20 /* GradientView.swift */,
+				0E47ED7F1CDC92F200AF56BB /* BookingFactory.swift */,
 			);
 			name = Lib;
 			sourceTree = "<group>";
@@ -360,6 +410,8 @@
 			isa = PBXGroup;
 			children = (
 				0E1502291CD670AB005856B3 /* User.swift */,
+				0E47ED881CDC978B00AF56BB /* Cart.swift */,
+				0E47ED8D1CDC9BFC00AF56BB /* Voucher.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -396,6 +448,8 @@
 		0E629ADD1CD54C7100370DA3 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				0E47ED8A1CDC990300AF56BB /* Booking */,
+				0E7940821CDB942E00882E20 /* Presentation */,
 				0E5A8BC01CD743D7004E005F /* Backend */,
 				0E5A8BBF1CD743B0004E005F /* Main */,
 				0E629ADE1CD54C8000370DA3 /* Login */,
@@ -426,10 +480,45 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		0E7940821CDB942E00882E20 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				0E7940931CDBBD3900882E20 /* Detail */,
+				0E79408A1CDB945200882E20 /* PresentationViewController.swift */,
+				0E79408D1CDB94D400882E20 /* PresentaionTableViewCell.swift */,
+			);
+			name = Presentation;
+			sourceTree = "<group>";
+		};
+		0E7940931CDBBD3900882E20 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				0E47ED911CDD0A6F00AF56BB /* DetailPresentationViewController.swift */,
+			);
+			name = Detail;
+			sourceTree = "<group>";
+		};
+		0EA2CBF91CDBC69700BBDF1E /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				0EA2CBF51CDBC5B500BBDF1E /* System San Francisco Display Bold.ttf */,
+				0EA2CBF61CDBC5B500BBDF1E /* System San Francisco Display Regular.ttf */,
+				0EA2CBF71CDBC5B500BBDF1E /* System San Francisco Display Thin.ttf */,
+				0EA2CBF81CDBC5B500BBDF1E /* SystemSanFranciscoDisplayUltralight.ttf */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
+		0EA2CBFA1CDBD82700BBDF1E /* Booking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Booking;
+			sourceTree = "<group>";
+		};
 		0EC77BD31CD8992800DA9979 /* OperatorList */ = {
 			isa = PBXGroup;
 			children = (
-				0E025E7C1CD8F92700AE8077 /* Detail */,
 				0E2EFCE31CD8636E0081ECCD /* OperatorListViewController.swift */,
 				0EC77BCA1CD8965400DA9979 /* OperatorListTableViewCell.swift */,
 			);
@@ -673,24 +762,35 @@
 				0E5A8BD11CD7770A004E005F /* MyInformationTableViewCell.swift in Sources */,
 				0E5A8BD51CD7BEB7004E005F /* EditInformationViewController.swift in Sources */,
 				0E629AE01CD54C9A00370DA3 /* LoginViewController.swift in Sources */,
+				0E47ED891CDC978B00AF56BB /* Cart.swift in Sources */,
 				0E5A8BD31CD7A173004E005F /* SettingMyInformationViewController.swift in Sources */,
+				0E79408B1CDB945200882E20 /* PresentationViewController.swift in Sources */,
 				0E1502191CD666D2005856B3 /* ModalViewController.swift in Sources */,
 				0EC77BD81CD89C7200DA9979 /* MyOperatorTableViewCell.swift in Sources */,
 				0E5A8BC71CD74BB9004E005F /* MainBackendViewController.swift in Sources */,
 				0E55CB2D1CD517A400DFFD0F /* TourAgentManagement.xcdatamodeld in Sources */,
 				0E1502221CD66AE5005856B3 /* SwiftyJSON.swift in Sources */,
+				0E7940901CDB9CE600882E20 /* GradientView.swift in Sources */,
+				0E47ED951CDD185500AF56BB /* SetPriceTableViewController.swift in Sources */,
 				0E5A8BCF1CD76E76004E005F /* MyInformationViewController.swift in Sources */,
 				0E55CB271CD517A400DFFD0F /* ViewController.swift in Sources */,
 				0E55CB251CD517A400DFFD0F /* AppDelegate.swift in Sources */,
+				0E47ED921CDD0A6F00AF56BB /* DetailPresentationViewController.swift in Sources */,
 				0E025E851CD8F94000AE8077 /* DetailOperatorListTableViewCell.swift in Sources */,
 				0EC77BD61CD89C5900DA9979 /* MyOperatorViewController.swift in Sources */,
+				0E47ED801CDC92F200AF56BB /* BookingFactory.swift in Sources */,
+				0E47ED971CDD18BB00AF56BB /* SetPriceTableViewCell.swift in Sources */,
+				0E47ED8E1CDC9BFC00AF56BB /* Voucher.swift in Sources */,
 				0E5A8BCC1CD763F4004E005F /* APIFacade.swift in Sources */,
+				0E47ED8C1CDC994400AF56BB /* BookingMainViewController.swift in Sources */,
 				0E15022A1CD670AB005856B3 /* User.swift in Sources */,
 				0E187A771CD9357700D8B3A9 /* InternetCheck.swift in Sources */,
+				0E79408E1CDB94D400882E20 /* PresentaionTableViewCell.swift in Sources */,
 				0E2EFCDA1CD854B10081ECCD /* MyColor.swift in Sources */,
 				0E5A8BC21CD7467B004E005F /* MainViewController.swift in Sources */,
 				0E2EFCE41CD8636E0081ECCD /* OperatorListViewController.swift in Sources */,
 				0E025E871CD8FACB00AE8077 /* DetailOperatorViewController.swift in Sources */,
+				0E47ED901CDCFCA900AF56BB /* BookingTableViewCell.swift in Sources */,
 				0E5A8BCA1CD74F0B004E005F /* MainBackendTableViewCell.swift in Sources */,
 				0EC77BCB1CD8965400DA9979 /* OperatorListTableViewCell.swift in Sources */,
 			);

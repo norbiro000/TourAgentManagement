@@ -16,6 +16,8 @@ class DetailOperatorViewController: UIViewController ,UITableViewDelegate, UITab
     var textTitle:String = ""
     var operator_id = ""
     
+    var isEdit:Bool = false
+    @IBOutlet weak var button_Contact: UIButton!
     
     @IBOutlet weak var lb_title: UILabel!
     @IBOutlet weak var lb_address: UILabel!
@@ -47,6 +49,14 @@ class DetailOperatorViewController: UIViewController ,UITableViewDelegate, UITab
         print(dataSource)
         
         
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(true)
+        if isEdit {
+            button_Contact.setTitle("END CONTACT", forState: .Normal)
+            button_Contact.backgroundColor = UIColor.redColor()
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -115,20 +125,39 @@ class DetailOperatorViewController: UIViewController ,UITableViewDelegate, UITab
     */
 
     @IBAction func onContact(sender: AnyObject) {
-        var requestAlert = UIAlertController(title: "Send Contact", message: "Do you want to work with this operator", preferredStyle: UIAlertControllerStyle.Alert)
-        
-        requestAlert.addAction(UIAlertAction(title: "Yes", style: .Default, handler: { (action: UIAlertAction!) in
+        if !isEdit{
+            var requestAlert = UIAlertController(title: "Send Contact", message: "Do you want to work with this operator", preferredStyle: UIAlertControllerStyle.Alert)
             
-            let param = ["to_id": self.operator_id]
-            print(param)
-            Service.shareService.sendRequestAddPartner(param)
-        }))
-        
-        requestAlert.addAction(UIAlertAction(title: "No", style: .Default, handler: { (action: UIAlertAction!) in
-            print("Handle Cancel Logic here")
-        }))
-        
-        presentViewController(requestAlert, animated: true, completion: nil)
+            requestAlert.addAction(UIAlertAction(title: "Yes", style: .Default, handler: { (action: UIAlertAction!) in
+                
+                let param = ["to_id": self.operator_id]
+                
+                Service.shareService.sendRequestAddPartner(param)
+                
+            }))
+            
+            requestAlert.addAction(UIAlertAction(title: "No", style: .Default, handler: { (action: UIAlertAction!) in
+                print("Handle Cancel Logic here")
+            }))
+            
+            presentViewController(requestAlert, animated: true, completion: nil)
+        }else{
+            var requestAlert = UIAlertController(title: "Terminated Contact", message: "Sure ?", preferredStyle: UIAlertControllerStyle.Alert)
+            
+            requestAlert.addAction(UIAlertAction(title: "Yes", style: .Default, handler: { (action: UIAlertAction!) in
+                
+                let param = ["to_id": self.operator_id]
+                
+                Service.shareService.sendRequestAddPartner(param)
+                
+            }))
+            
+            requestAlert.addAction(UIAlertAction(title: "No", style: .Default, handler: { (action: UIAlertAction!) in
+                print("Handle Cancel Logic here")
+            }))
+            
+            presentViewController(requestAlert, animated: true, completion: nil)
+        }
     }
 }
 

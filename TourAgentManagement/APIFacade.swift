@@ -58,6 +58,16 @@ class Service {
         }
     }
     
+    func getMyService(completion: (JSON)->()){
+        Alamofire.request(.GET, host+"/api/myService/"+User.shareInstance.token)
+            .response { request, response, data, err in
+                if let data = data{
+                    let json = JSON(data: data)
+                    completion(json)
+                }
+        }
+    }
+    
     func sendRequestAddPartner(params:[String:String]){
         Alamofire.request(.POST, host+"/api/addPartner/"+User.shareInstance.token, parameters: params)
             .response { request, response, data, err in
