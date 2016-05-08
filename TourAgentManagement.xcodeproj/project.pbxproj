@@ -23,6 +23,9 @@
 		0E47ED921CDD0A6F00AF56BB /* DetailPresentationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E47ED911CDD0A6F00AF56BB /* DetailPresentationViewController.swift */; };
 		0E47ED951CDD185500AF56BB /* SetPriceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E47ED941CDD185500AF56BB /* SetPriceTableViewController.swift */; };
 		0E47ED971CDD18BB00AF56BB /* SetPriceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E47ED961CDD18BB00AF56BB /* SetPriceTableViewCell.swift */; };
+		0E50A3E31CDF02030052FA3F /* AddTranferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E50A3E21CDF02030052FA3F /* AddTranferViewController.swift */; };
+		0E50A3E51CDF07450052FA3F /* SetTimeToBookingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E50A3E41CDF07450052FA3F /* SetTimeToBookingViewController.swift */; };
+		0E50A3E81CDF2DCC0052FA3F /* SummaryBookingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E50A3E71CDF2DCC0052FA3F /* SummaryBookingViewController.swift */; };
 		0E55CB251CD517A400DFFD0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E55CB241CD517A400DFFD0F /* AppDelegate.swift */; };
 		0E55CB271CD517A400DFFD0F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E55CB261CD517A400DFFD0F /* ViewController.swift */; };
 		0E55CB2A1CD517A400DFFD0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E55CB281CD517A400DFFD0F /* Main.storyboard */; };
@@ -46,9 +49,12 @@
 		0E629AE01CD54C9A00370DA3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E629ADF1CD54C9A00370DA3 /* LoginViewController.swift */; };
 		0E629B2C1CD5562900370DA3 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E629B1E1CD5560F00370DA3 /* Alamofire.framework */; };
 		0E629B2D1CD5562900370DA3 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0E629B1E1CD5560F00370DA3 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0E6720B61CDF8816003C68A5 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6720B51CDF8816003C68A5 /* CartViewController.swift */; };
+		0E6720B81CDF8B3C003C68A5 /* CartItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6720B71CDF8B3C003C68A5 /* CartItemTableViewCell.swift */; };
 		0E79408B1CDB945200882E20 /* PresentationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E79408A1CDB945200882E20 /* PresentationViewController.swift */; };
 		0E79408E1CDB94D400882E20 /* PresentaionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E79408D1CDB94D400882E20 /* PresentaionTableViewCell.swift */; };
 		0E7940901CDB9CE600882E20 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E79408F1CDB9CE600882E20 /* GradientView.swift */; };
+		0EAD3CE21CDE615000D045CC /* GuessInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAD3CE11CDE615000D045CC /* GuessInformationViewController.swift */; };
 		0EC77BCB1CD8965400DA9979 /* OperatorListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC77BCA1CD8965400DA9979 /* OperatorListTableViewCell.swift */; };
 		0EC77BD61CD89C5900DA9979 /* MyOperatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC77BD51CD89C5900DA9979 /* MyOperatorViewController.swift */; };
 		0EC77BD81CD89C7200DA9979 /* MyOperatorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC77BD71CD89C7200DA9979 /* MyOperatorTableViewCell.swift */; };
@@ -195,6 +201,9 @@
 		0E47ED911CDD0A6F00AF56BB /* DetailPresentationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailPresentationViewController.swift; sourceTree = "<group>"; };
 		0E47ED941CDD185500AF56BB /* SetPriceTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetPriceTableViewController.swift; sourceTree = "<group>"; };
 		0E47ED961CDD18BB00AF56BB /* SetPriceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetPriceTableViewCell.swift; sourceTree = "<group>"; };
+		0E50A3E21CDF02030052FA3F /* AddTranferViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTranferViewController.swift; sourceTree = "<group>"; };
+		0E50A3E41CDF07450052FA3F /* SetTimeToBookingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetTimeToBookingViewController.swift; sourceTree = "<group>"; };
+		0E50A3E71CDF2DCC0052FA3F /* SummaryBookingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SummaryBookingViewController.swift; sourceTree = "<group>"; };
 		0E55CB211CD517A400DFFD0F /* TourAgentManagement.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TourAgentManagement.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E55CB241CD517A400DFFD0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E55CB261CD517A400DFFD0F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -221,6 +230,8 @@
 		0E629ACF1CD54C3700370DA3 /* TextFieldEffects.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TextFieldEffects.xcodeproj; path = TextFieldEffects/TextFieldEffects.xcodeproj; sourceTree = "<group>"; };
 		0E629ADF1CD54C9A00370DA3 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		0E629B131CD5560F00370DA3 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
+		0E6720B51CDF8816003C68A5 /* CartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		0E6720B71CDF8B3C003C68A5 /* CartItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartItemTableViewCell.swift; sourceTree = "<group>"; };
 		0E79408A1CDB945200882E20 /* PresentationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentationViewController.swift; sourceTree = "<group>"; };
 		0E79408D1CDB94D400882E20 /* PresentaionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentaionTableViewCell.swift; sourceTree = "<group>"; };
 		0E79408F1CDB9CE600882E20 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
@@ -228,6 +239,7 @@
 		0EA2CBF61CDBC5B500BBDF1E /* System San Francisco Display Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "System San Francisco Display Regular.ttf"; sourceTree = "<group>"; };
 		0EA2CBF71CDBC5B500BBDF1E /* System San Francisco Display Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "System San Francisco Display Thin.ttf"; sourceTree = "<group>"; };
 		0EA2CBF81CDBC5B500BBDF1E /* SystemSanFranciscoDisplayUltralight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SystemSanFranciscoDisplayUltralight.ttf; sourceTree = "<group>"; };
+		0EAD3CE11CDE615000D045CC /* GuessInformationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuessInformationViewController.swift; sourceTree = "<group>"; };
 		0EC77BCA1CD8965400DA9979 /* OperatorListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperatorListTableViewCell.swift; sourceTree = "<group>"; };
 		0EC77BD51CD89C5900DA9979 /* MyOperatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyOperatorViewController.swift; sourceTree = "<group>"; };
 		0EC77BD71CD89C7200DA9979 /* MyOperatorTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyOperatorTableViewCell.swift; sourceTree = "<group>"; };
@@ -283,6 +295,10 @@
 		0E47ED8A1CDC990300AF56BB /* Booking */ = {
 			isa = PBXGroup;
 			children = (
+				0E50A3E61CDF2D7F0052FA3F /* Summary */,
+				0E50A3DA1CDEF7DD0052FA3F /* AddTranferMethod */,
+				0EAD3CE01CDE60E400D045CC /* DateAndTime */,
+				0EAD3CD81CDE60D100D045CC /* GuessInformation */,
 				0E47ED931CDD17E200AF56BB /* SetPrice */,
 				0E47ED8B1CDC994400AF56BB /* BookingMainViewController.swift */,
 				0E47ED8F1CDCFCA900AF56BB /* BookingTableViewCell.swift */,
@@ -297,6 +313,22 @@
 				0E47ED961CDD18BB00AF56BB /* SetPriceTableViewCell.swift */,
 			);
 			name = SetPrice;
+			sourceTree = "<group>";
+		};
+		0E50A3DA1CDEF7DD0052FA3F /* AddTranferMethod */ = {
+			isa = PBXGroup;
+			children = (
+				0E50A3E21CDF02030052FA3F /* AddTranferViewController.swift */,
+			);
+			name = AddTranferMethod;
+			sourceTree = "<group>";
+		};
+		0E50A3E61CDF2D7F0052FA3F /* Summary */ = {
+			isa = PBXGroup;
+			children = (
+				0E50A3E71CDF2DCC0052FA3F /* SummaryBookingViewController.swift */,
+			);
+			name = Summary;
 			sourceTree = "<group>";
 		};
 		0E55CB181CD517A400DFFD0F = {
@@ -448,6 +480,7 @@
 		0E629ADD1CD54C7100370DA3 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				0E6720AD1CDF87F4003C68A5 /* CartAndCheckOut */,
 				0E47ED8A1CDC990300AF56BB /* Booking */,
 				0E7940821CDB942E00882E20 /* Presentation */,
 				0E5A8BC01CD743D7004E005F /* Backend */,
@@ -478,6 +511,15 @@
 				0E629B2A1CD5560F00370DA3 /* Alamofire.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		0E6720AD1CDF87F4003C68A5 /* CartAndCheckOut */ = {
+			isa = PBXGroup;
+			children = (
+				0E6720B51CDF8816003C68A5 /* CartViewController.swift */,
+				0E6720B71CDF8B3C003C68A5 /* CartItemTableViewCell.swift */,
+			);
+			name = CartAndCheckOut;
 			sourceTree = "<group>";
 		};
 		0E7940821CDB942E00882E20 /* Presentation */ = {
@@ -514,6 +556,22 @@
 			children = (
 			);
 			name = Booking;
+			sourceTree = "<group>";
+		};
+		0EAD3CD81CDE60D100D045CC /* GuessInformation */ = {
+			isa = PBXGroup;
+			children = (
+				0EAD3CE11CDE615000D045CC /* GuessInformationViewController.swift */,
+			);
+			name = GuessInformation;
+			sourceTree = "<group>";
+		};
+		0EAD3CE01CDE60E400D045CC /* DateAndTime */ = {
+			isa = PBXGroup;
+			children = (
+				0E50A3E41CDF07450052FA3F /* SetTimeToBookingViewController.swift */,
+			);
+			name = DateAndTime;
 			sourceTree = "<group>";
 		};
 		0EC77BD31CD8992800DA9979 /* OperatorList */ = {
@@ -775,12 +833,15 @@
 				0E5A8BCF1CD76E76004E005F /* MyInformationViewController.swift in Sources */,
 				0E55CB271CD517A400DFFD0F /* ViewController.swift in Sources */,
 				0E55CB251CD517A400DFFD0F /* AppDelegate.swift in Sources */,
+				0EAD3CE21CDE615000D045CC /* GuessInformationViewController.swift in Sources */,
 				0E47ED921CDD0A6F00AF56BB /* DetailPresentationViewController.swift in Sources */,
 				0E025E851CD8F94000AE8077 /* DetailOperatorListTableViewCell.swift in Sources */,
+				0E6720B61CDF8816003C68A5 /* CartViewController.swift in Sources */,
 				0EC77BD61CD89C5900DA9979 /* MyOperatorViewController.swift in Sources */,
 				0E47ED801CDC92F200AF56BB /* BookingFactory.swift in Sources */,
 				0E47ED971CDD18BB00AF56BB /* SetPriceTableViewCell.swift in Sources */,
 				0E47ED8E1CDC9BFC00AF56BB /* Voucher.swift in Sources */,
+				0E50A3E31CDF02030052FA3F /* AddTranferViewController.swift in Sources */,
 				0E5A8BCC1CD763F4004E005F /* APIFacade.swift in Sources */,
 				0E47ED8C1CDC994400AF56BB /* BookingMainViewController.swift in Sources */,
 				0E15022A1CD670AB005856B3 /* User.swift in Sources */,
@@ -788,8 +849,11 @@
 				0E79408E1CDB94D400882E20 /* PresentaionTableViewCell.swift in Sources */,
 				0E2EFCDA1CD854B10081ECCD /* MyColor.swift in Sources */,
 				0E5A8BC21CD7467B004E005F /* MainViewController.swift in Sources */,
+				0E50A3E81CDF2DCC0052FA3F /* SummaryBookingViewController.swift in Sources */,
 				0E2EFCE41CD8636E0081ECCD /* OperatorListViewController.swift in Sources */,
+				0E6720B81CDF8B3C003C68A5 /* CartItemTableViewCell.swift in Sources */,
 				0E025E871CD8FACB00AE8077 /* DetailOperatorViewController.swift in Sources */,
+				0E50A3E51CDF07450052FA3F /* SetTimeToBookingViewController.swift in Sources */,
 				0E47ED901CDCFCA900AF56BB /* BookingTableViewCell.swift in Sources */,
 				0E5A8BCA1CD74F0B004E005F /* MainBackendTableViewCell.swift in Sources */,
 				0EC77BCB1CD8965400DA9979 /* OperatorListTableViewCell.swift in Sources */,

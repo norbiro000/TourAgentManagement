@@ -20,9 +20,10 @@ protocol Booking {
 }
 
 
+
 class PersonalBooking : Booking{
     func booking(service_name:String ,email:String) {
-        var voucher = Voucher()
+//        var voucher = Voucher()
     }
     
     func clear() {

@@ -30,6 +30,16 @@ class PresentationViewController: UIViewController ,UITableViewDelegate ,UITable
         
     }
     
+    override func viewDidAppear(animated: Bool) {
+        // 1
+        var nav = self.navigationController?.navigationBar
+        // 2
+        nav?.barStyle = UIBarStyle.Black
+        nav?.tintColor = UIColor.whiteColor()
+        MyColor.darkGreenColor()
+        nav?.barTintColor = MyColor.darkGreenColor()
+    }
+    
     
     func reloadData(){
         Service.shareService.getMyService { (JSON) in

@@ -24,17 +24,31 @@ class DetailPresentationViewController: UIViewController {
     }
     
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        let destinaiton: BookingMainViewController =  segue.destinationViewController as! BookingMainViewController
+        
+        //Set Data for Singleton data
+        VoucherBuilder.Building.currentJSON = self.dataSource
+        
+        destinaiton.dataSource = self.dataSource
     }
-    */
+    
 
     @IBAction func onTakeTrip(sender: AnyObject) {
+        
+        let operator_id = dataSource["email"].stringValue
+        let service_id = dataSource["_id"].stringValue
+        let tourProgram = dataSource["content"]["service_name"].stringValue
+        
+        VoucherBuilder.Building.newVoucher(operator_id, service_id: service_id, tourProgram: tourProgram)
+        
         performSegueWithIdentifier("setVoucherSugue", sender: nil)
+        
     }
 }

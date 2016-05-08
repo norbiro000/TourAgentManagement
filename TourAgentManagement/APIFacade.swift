@@ -80,4 +80,16 @@ class Service {
         }
     }
     
+    
+    
+    
+//    BOOKING
+    func booking(params : [String:AnyObject], completion: ()->()) {
+        Alamofire.request(.POST, host+"/api/booking/"+User.shareInstance.token, parameters: params)
+            .response { request, response, data, err in
+                completion()
+        }
+        
+    }
+    
 }

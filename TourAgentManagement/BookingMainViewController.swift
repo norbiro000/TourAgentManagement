@@ -49,7 +49,7 @@ class BookingMainViewController: UIViewController ,UITableViewDelegate, UITableV
         
         let destination:SetPriceTableViewController = segue.destinationViewController as! SetPriceTableViewController
         
-        destination.price = self.dataSource[indexPath.row]
+        destination.dataSource = self.dataSource
         
         
     }
@@ -57,7 +57,6 @@ class BookingMainViewController: UIViewController ,UITableViewDelegate, UITableV
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         if indexPath.row == 0{
             performSegueWithIdentifier("selectPriceSegue", sender: indexPath)
-            
         }
     }
  

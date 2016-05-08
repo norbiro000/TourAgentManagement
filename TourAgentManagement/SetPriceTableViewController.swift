@@ -7,13 +7,14 @@
 //
 
 import UIKit
+import DZNEmptyDataSet
 
-class SetPriceTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
+class SetPriceTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, DZNEmptyDataSetSource, DZNEmptyDataSetDelegate{
     
     
     @IBOutlet weak var tableView: UITableView!
     
-    var price:JSON = []
+    var dataSource:JSON = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +27,13 @@ class SetPriceTableViewController: UIViewController, UITableViewDelegate, UITabl
         
         self.tableView.dataSource = self
         self.tableView.delegate = self
+        self.tableView.emptyDataSetSource = self
+        self.tableView.emptyDataSetDelegate = self
+        self.tableView.tableFooterView = UIView()
+        
+        self.title = "Setting Price"
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -42,17 +50,30 @@ class SetPriceTableViewController: UIViewController, UITableViewDelegate, UITabl
 
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 1
+        return dataSource["price"].count
     }
 
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath) as! SetPriceTableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("showPriceCell", forIndexPath: indexPath) as! SetPriceTableViewCell
         
-        cell.lb_title.text = "Child"
-        cell.lb_price.text = "+100"
+        cell.lb_title.text = dataSource["price"][indexPath.row]["tag"].stringValue
+        cell.lb_price.text = dataSource["price"][indexPath.row]["maxprice"].stringValue
 
         return cell
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let price = dataSource["price"][indexPath.row]["maxprice"].intValue
+        let tag = dataSource["price"][indexPath.row]["tag"].stringValue
+        let guess:[String:String] = ["tag":"\(tag)", "price":"\(price)", "amonut":"\(1)"]
+        
+        VoucherBuilder.Building.guessAmount!.append(guess)
+        
+        print(VoucherBuilder.Building.guessAmount)
+        if VoucherBuilder.Building.guessAmount!.count != 0{
+            performSegueWithIdentifier("setPersonalInformationSegue", sender: nil)
+        }
     }
     
 
