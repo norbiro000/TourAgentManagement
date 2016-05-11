@@ -11,16 +11,32 @@ import UIKit
 class DetailPresentationViewController: UIViewController {
     
     var dataSource:JSON = []
+    @IBOutlet weak var lb_price: UILabel!
 
+    @IBOutlet weak var lb_title: UILabel!
+    @IBOutlet weak var lb_des: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.lb_title.text = dataSource["content"]["service_name"].stringValue
+        self.lb_des.text = dataSource["content"]["description"].stringValue
+        print(dataSource)
+        
+        var price = ""
+        
+        for item in dataSource["price"]{
+            price += "\(item.1["tag"].stringValue) : \(item.1["maxprice"].stringValue)"
+        }
+        
+        self.lb_price.text = price
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+        
+        
     }
     
 

@@ -14,6 +14,7 @@ class PresentationViewController: UIViewController ,UITableViewDelegate ,UITable
     var dataSource:JSON = []
 
     @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -68,7 +69,30 @@ class PresentationViewController: UIViewController ,UITableViewDelegate ,UITable
         
         cell.img_background.image = UIImage(named: "tigerkingdom2")
         cell.lb_title.text = self.dataSource[indexPath.row]["content"]["service_name"].stringValue
+        
+        if indexPath.row == 0{
+            if let url = NSURL(string: "http://localhost:8080/dist/imgs/file-1462927852221") {
+                if let data = NSData(contentsOfURL: url) {
+                    cell.img_background.image = UIImage(data: data)
+                }        
+            }
+        }
+        if indexPath.row == 1{
+            if let url = NSURL(string: "http://localhost:8080/dist/imgs/file-1462910586603") {
+                if let data = NSData(contentsOfURL: url) {
+                    cell.img_background.image = UIImage(data: data)
+                }
+            }
+        }
+        if indexPath.row == 2{
+            if let url = NSURL(string: "http://www.safaritaly.com/wp-content/uploads/2015/02/ponte_rialto_venezia.jpg") {
+                if let data = NSData(contentsOfURL: url) {
+                    cell.img_background.image = UIImage(data: data)
+                }
+            }
+        }
 
+        
         
         return cell
     }
@@ -110,5 +134,25 @@ extension PresentationViewController{
     
     func imageForEmptyDataSet(scrollView: UIScrollView!) -> UIImage! {
         return UIImage(named: "taylor-swift")
+    }
+}
+
+extension UIImageView {
+    func downloadedFrom(link link:String, contentMode mode: UIViewContentMode) {
+        guard
+            let url = NSURL(string: link)
+            else {return}
+        contentMode = mode
+        NSURLSession.sharedSession().dataTaskWithURL(url, completionHandler: { (data, response, error) -> Void in
+            guard
+                let httpURLResponse = response as? NSHTTPURLResponse where httpURLResponse.statusCode == 200,
+                let mimeType = response?.MIMEType where mimeType.hasPrefix("image"),
+                let data = data where error == nil,
+                let image = UIImage(data: data)
+                else { return }
+            dispatch_async(dispatch_get_main_queue()) { () -> Void in
+                self.image = image
+            }
+        }).resume()
     }
 }

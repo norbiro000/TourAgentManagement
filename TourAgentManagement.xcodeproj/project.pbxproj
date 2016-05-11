@@ -54,10 +54,14 @@
 		0E79408B1CDB945200882E20 /* PresentationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E79408A1CDB945200882E20 /* PresentationViewController.swift */; };
 		0E79408E1CDB94D400882E20 /* PresentaionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E79408D1CDB94D400882E20 /* PresentaionTableViewCell.swift */; };
 		0E7940901CDB9CE600882E20 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E79408F1CDB9CE600882E20 /* GradientView.swift */; };
+		0E7F44C11CE1D97200CBDCEE /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7F44C01CE1D97200CBDCEE /* PaymentViewController.swift */; };
 		0EAD3CE21CDE615000D045CC /* GuessInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAD3CE11CDE615000D045CC /* GuessInformationViewController.swift */; };
 		0EC77BCB1CD8965400DA9979 /* OperatorListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC77BCA1CD8965400DA9979 /* OperatorListTableViewCell.swift */; };
 		0EC77BD61CD89C5900DA9979 /* MyOperatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC77BD51CD89C5900DA9979 /* MyOperatorViewController.swift */; };
 		0EC77BD81CD89C7200DA9979 /* MyOperatorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC77BD71CD89C7200DA9979 /* MyOperatorTableViewCell.swift */; };
+		0EEEA6391CE0F2CD00755083 /* MyCustomerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEEA6381CE0F2CD00755083 /* MyCustomerTableViewController.swift */; };
+		0EEEA63B1CE0F37C00755083 /* MyCustomerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEEA63A1CE0F37C00755083 /* MyCustomerTableViewCell.swift */; };
+		0EEEA63D1CE0F81400755083 /* VoucherListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEEA63C1CE0F81400755083 /* VoucherListTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -235,6 +239,7 @@
 		0E79408A1CDB945200882E20 /* PresentationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentationViewController.swift; sourceTree = "<group>"; };
 		0E79408D1CDB94D400882E20 /* PresentaionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentaionTableViewCell.swift; sourceTree = "<group>"; };
 		0E79408F1CDB9CE600882E20 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		0E7F44C01CE1D97200CBDCEE /* PaymentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
 		0EA2CBF51CDBC5B500BBDF1E /* System San Francisco Display Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "System San Francisco Display Bold.ttf"; sourceTree = "<group>"; };
 		0EA2CBF61CDBC5B500BBDF1E /* System San Francisco Display Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "System San Francisco Display Regular.ttf"; sourceTree = "<group>"; };
 		0EA2CBF71CDBC5B500BBDF1E /* System San Francisco Display Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "System San Francisco Display Thin.ttf"; sourceTree = "<group>"; };
@@ -243,6 +248,9 @@
 		0EC77BCA1CD8965400DA9979 /* OperatorListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperatorListTableViewCell.swift; sourceTree = "<group>"; };
 		0EC77BD51CD89C5900DA9979 /* MyOperatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyOperatorViewController.swift; sourceTree = "<group>"; };
 		0EC77BD71CD89C7200DA9979 /* MyOperatorTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyOperatorTableViewCell.swift; sourceTree = "<group>"; };
+		0EEEA6381CE0F2CD00755083 /* MyCustomerTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCustomerTableViewController.swift; sourceTree = "<group>"; };
+		0EEEA63A1CE0F37C00755083 /* MyCustomerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCustomerTableViewCell.swift; sourceTree = "<group>"; };
+		0EEEA63C1CE0F81400755083 /* VoucherListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoucherListTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -408,6 +416,7 @@
 		0E5A8BC01CD743D7004E005F /* Backend */ = {
 			isa = PBXGroup;
 			children = (
+				0E8FCF0D1CE0DF37006BEB68 /* My Customer */,
 				0EA2CBFA1CDBD82700BBDF1E /* Booking */,
 				0E2EFCE21CD85C110081ECCD /* Operator */,
 				0E5A8BCD1CD76E51004E005F /* My Information */,
@@ -480,6 +489,7 @@
 		0E629ADD1CD54C7100370DA3 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				0E7F44B81CE1D95900CBDCEE /* Payment */,
 				0E6720AD1CDF87F4003C68A5 /* CartAndCheckOut */,
 				0E47ED8A1CDC990300AF56BB /* Booking */,
 				0E7940821CDB942E00882E20 /* Presentation */,
@@ -538,6 +548,24 @@
 				0E47ED911CDD0A6F00AF56BB /* DetailPresentationViewController.swift */,
 			);
 			name = Detail;
+			sourceTree = "<group>";
+		};
+		0E7F44B81CE1D95900CBDCEE /* Payment */ = {
+			isa = PBXGroup;
+			children = (
+				0E7F44C01CE1D97200CBDCEE /* PaymentViewController.swift */,
+			);
+			name = Payment;
+			sourceTree = "<group>";
+		};
+		0E8FCF0D1CE0DF37006BEB68 /* My Customer */ = {
+			isa = PBXGroup;
+			children = (
+				0EEEA6381CE0F2CD00755083 /* MyCustomerTableViewController.swift */,
+				0EEEA63A1CE0F37C00755083 /* MyCustomerTableViewCell.swift */,
+				0EEEA63C1CE0F81400755083 /* VoucherListTableViewController.swift */,
+			);
+			name = "My Customer";
 			sourceTree = "<group>";
 		};
 		0EA2CBF91CDBC69700BBDF1E /* Resource */ = {
@@ -830,6 +858,7 @@
 				0E1502221CD66AE5005856B3 /* SwiftyJSON.swift in Sources */,
 				0E7940901CDB9CE600882E20 /* GradientView.swift in Sources */,
 				0E47ED951CDD185500AF56BB /* SetPriceTableViewController.swift in Sources */,
+				0EEEA6391CE0F2CD00755083 /* MyCustomerTableViewController.swift in Sources */,
 				0E5A8BCF1CD76E76004E005F /* MyInformationViewController.swift in Sources */,
 				0E55CB271CD517A400DFFD0F /* ViewController.swift in Sources */,
 				0E55CB251CD517A400DFFD0F /* AppDelegate.swift in Sources */,
@@ -847,12 +876,15 @@
 				0E15022A1CD670AB005856B3 /* User.swift in Sources */,
 				0E187A771CD9357700D8B3A9 /* InternetCheck.swift in Sources */,
 				0E79408E1CDB94D400882E20 /* PresentaionTableViewCell.swift in Sources */,
+				0EEEA63B1CE0F37C00755083 /* MyCustomerTableViewCell.swift in Sources */,
 				0E2EFCDA1CD854B10081ECCD /* MyColor.swift in Sources */,
 				0E5A8BC21CD7467B004E005F /* MainViewController.swift in Sources */,
 				0E50A3E81CDF2DCC0052FA3F /* SummaryBookingViewController.swift in Sources */,
+				0EEEA63D1CE0F81400755083 /* VoucherListTableViewController.swift in Sources */,
 				0E2EFCE41CD8636E0081ECCD /* OperatorListViewController.swift in Sources */,
 				0E6720B81CDF8B3C003C68A5 /* CartItemTableViewCell.swift in Sources */,
 				0E025E871CD8FACB00AE8077 /* DetailOperatorViewController.swift in Sources */,
+				0E7F44C11CE1D97200CBDCEE /* PaymentViewController.swift in Sources */,
 				0E50A3E51CDF07450052FA3F /* SetTimeToBookingViewController.swift in Sources */,
 				0E47ED901CDCFCA900AF56BB /* BookingTableViewCell.swift in Sources */,
 				0E5A8BCA1CD74F0B004E005F /* MainBackendTableViewCell.swift in Sources */,

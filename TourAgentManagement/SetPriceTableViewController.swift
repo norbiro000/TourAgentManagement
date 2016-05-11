@@ -11,8 +11,11 @@ import DZNEmptyDataSet
 
 class SetPriceTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, DZNEmptyDataSetSource, DZNEmptyDataSetDelegate{
     
+    @IBOutlet weak var btn_next: UIButton!
     
     @IBOutlet weak var tableView: UITableView!
+    
+    var state:Int = 0
     
     var dataSource:JSON = []
 
@@ -32,6 +35,9 @@ class SetPriceTableViewController: UIViewController, UITableViewDelegate, UITabl
         self.tableView.tableFooterView = UIView()
         
         self.title = "Setting Price"
+        if state == 0{
+            btn_next.hidden = true
+        }
         
         
     }
@@ -72,10 +78,17 @@ class SetPriceTableViewController: UIViewController, UITableViewDelegate, UITabl
         
         print(VoucherBuilder.Building.guessAmount)
         if VoucherBuilder.Building.guessAmount!.count != 0{
-            performSegueWithIdentifier("setPersonalInformationSegue", sender: nil)
+            if state == 0{
+                performSegueWithIdentifier("setPersonalInformationSegue", sender: nil)
+            }else{
+                
+            }
         }
     }
     
+    @IBAction func onNext(sender: AnyObject) {
+        performSegueWithIdentifier("setPersonalInformationSegue", sender: nil)
+    }
 
     /*
     // Override to support conditional editing of the table view.

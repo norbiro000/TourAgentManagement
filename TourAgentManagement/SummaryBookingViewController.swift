@@ -35,17 +35,55 @@ class SummaryBookingViewController: UIViewController {
         
         lb_serviceName.text = building.tourProgram
         
+        var arrayTag:[String]=[]
+        var amonnt:[String]=[]
+        
+        for tag in building.guessAmount!{
+            if !arrayTag.contains(tag["tag"]!){
+                arrayTag.append(tag["tag"]!)
+                
+            }
+        }
+        
+        var data:[[String:String]] = []
         var amontString = ""
-        for voucher in building.guessAmount!{
-            amontString += "\(voucher["tag"]!):\(voucher["amonut"]!)"
-            if voucher != building.guessAmount!.last!{
-                amontString += ", "
+        var count:Int = 0
+        
+        if building.guessAmount!.count > 0 {
+            count = 0
+            for tag in arrayTag{
+                for x in building.guessAmount!{
+                    print(tag)
+                    print(x["tag"]!)
+
+                    let T = (tag == x["tag"]!)
+                    if T {
+                        count += 1
+                        print(count)
+                    }
+                }
+                data.append(["tag":tag, "amonut": "\(count)"])
+//                print(data)
+            }
+            
+            for voucher in data{
+                amontString += "\(voucher["tag"]!):\(voucher["amonut"]!)"
+                if voucher != data.last!{
+                    amontString += ", "
+                }
+            }
+        }else{
+            for voucher in building.guessAmount!{
+                amontString += "\(voucher["tag"]!):\(voucher["amonut"]!)"
+                if voucher != building.guessAmount!.last!{
+                    amontString += ", "
+                }
             }
         }
         
         lb_amont.text = amontString
         
-        var dateFormatter = NSDateFormatter()
+        let dateFormatter = NSDateFormatter()
         
         dateFormatter.dateStyle = NSDateFormatterStyle.ShortStyle
         dateFormatter.timeStyle = NSDateFormatterStyle.ShortStyle
@@ -83,7 +121,7 @@ class SummaryBookingViewController: UIViewController {
         
         let vocher:Voucher = Voucher(builder: VoucherBuilder.Building)!
         
-        VoucherBuilder.Building.send()
+        VoucherBuilder.Building.send(self)
     }
 
 }

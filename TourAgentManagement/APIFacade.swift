@@ -81,6 +81,16 @@ class Service {
     }
     
     
+    //    Payment
+    func payment(params : [String:AnyObject], completion: ()->()) {
+        Alamofire.request(.POST, host+"/api/payment/"+User.shareInstance.token, parameters: params)
+            .response { request, response, data, err in
+                completion()
+        }
+        
+    }
+    
+    
     
     
 //    BOOKING
@@ -90,6 +100,16 @@ class Service {
                 completion()
         }
         
+    }
+    
+    func getMyVoucher(completion: (JSON) -> ()){
+        Alamofire.request(.GET, host+"/api/voucher/"+User.shareInstance.token)
+            .response { request, response, data, err in
+                if let data = data{
+                    let json = JSON(data: data)
+                    completion(json)
+                }
+        }
     }
     
 }

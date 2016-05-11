@@ -15,7 +15,8 @@ class BookingMainViewController: UIViewController ,UITableViewDelegate, UITableV
     
     var dataSet = ["Personal", "Group"]
     var dataSource:JSON = []
-
+    var state = 0
+    
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
@@ -44,18 +45,26 @@ class BookingMainViewController: UIViewController ,UITableViewDelegate, UITableV
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-        
+        if segue.identifier == "selectPriceSegue"{
         let indexPath = sender as! NSIndexPath
         
         let destination:SetPriceTableViewController = segue.destinationViewController as! SetPriceTableViewController
         
         destination.dataSource = self.dataSource
+        if state == 1 {
+            destination.state = self.state
+            }
+        }
         
         
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         if indexPath.row == 0{
+            performSegueWithIdentifier("selectPriceSegue", sender: indexPath)
+        }
+        if indexPath.row == 1{
+            self.state = 1
             performSegueWithIdentifier("selectPriceSegue", sender: indexPath)
         }
     }

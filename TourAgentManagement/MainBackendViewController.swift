@@ -17,8 +17,6 @@ class MainBackendViewController: UIViewController ,UITableViewDataSource, UITabl
     
     let sectionTitle = ["My Information","Operator","Customer"]
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -98,6 +96,11 @@ class MainBackendViewController: UIViewController ,UITableViewDataSource, UITabl
             }
             if indexPath.row == 1{
                 performSegueWithIdentifier("myOperatorSegue", sender: nil)
+            }
+            
+        case 2:
+            if indexPath.row == 0{
+                performSegueWithIdentifier("myCustomerSegue", sender: nil)
             }
         default:break
         }

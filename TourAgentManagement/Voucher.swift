@@ -109,6 +109,8 @@ class VoucherBuilder {
         self.currentJSON = nil
     }
     
+    
+    
     func getVoucher() ->VoucherBuilder{
         return self
     }
@@ -128,21 +130,43 @@ class VoucherBuilder {
         
     }
     
-    func send(){
+    func send(contact: SummaryBookingViewController){
+        
+        
+            let formatter = NSDateFormatter()
+            formatter.dateStyle = NSDateFormatterStyle.LongStyle
+            formatter.timeStyle = .ShortStyle
+            
+            let dateString = formatter.stringFromDate(self.timeToVisit!)
+        
+        var amontString = ""
+        for voucher in self.guessAmount!{
+            amontString += "\(voucher["tag"]!):\(voucher["amonut"]!)"
+            if voucher != self.guessAmount!.last!{
+                amontString += ", "
+            }
+        }
+        
+
+        
         let param: [String: AnyObject] = [
             "operator_email": self.operator_email!,
             "datas": [
                 "tourProgram": "\(self.tourProgram!)",
                 "guessName": "\(self.name!)",
-                "numberOfGuess": "\(self.guessAmount!)",
+                "numberOfGuess": "\(amontString)",
                 "meetingPoint": "\(self.meetPoint!)",
-                "time": "\(self.timeToVisit!)",
+                "time": "\(dateString)",
                 "remark": "\(self.remark!)"
             ],
             ]
         
         Service.shareService.booking(param) {
-            print("YOW")
+            if let navController = contact.navigationController {
+                for index in 1...7{
+                    navController.popViewControllerAnimated(false)
+                }
+            }
         }
         
     }
